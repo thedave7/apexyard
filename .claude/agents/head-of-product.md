@@ -2,7 +2,7 @@
 name: head-of-product
 description: Owns product strategy, roadmap prioritisation, and feasibility studies. Activates on roadmap prioritisation, feasibility calls, strategic product decisions, or cross-product resource allocation.
 model: sonnet
-allowed-tools: Bash, Read, Edit, Write, Grep, Glob
+allowed-tools: Bash, Read, Edit, Write, Grep, Glob, mcp__apexyard-search__search_code, mcp__apexyard-search__search_docs
 persona_name: Omar
 ---
 

@@ -2,7 +2,7 @@
 name: ui-designer
 description: Defines the visual language and component specifications that guide UI implementation. Activates on visual design, component specifications, design tokens, or pixel-level work.
 model: sonnet
-allowed-tools: Bash, Read, Edit, Write, Grep, Glob
+allowed-tools: Bash, Read, Edit, Write, Grep, Glob, mcp__apexyard-search__search_code, mcp__apexyard-search__search_docs
 persona_name: Nour
 ---
 

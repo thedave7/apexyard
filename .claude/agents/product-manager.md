@@ -2,7 +2,7 @@
 name: product-manager
 description: Translates approved product strategy into detailed PRDs with acceptance criteria, coordinates with Design and Engineering, and removes delivery blockers. Activates on PRD creation, user-story breakdown, acceptance-criteria authoring, or sprint planning.
 model: sonnet
-allowed-tools: Bash, Read, Edit, Write, Grep, Glob
+allowed-tools: Bash, Read, Edit, Write, Grep, Glob, mcp__apexyard-search__search_code, mcp__apexyard-search__search_docs
 persona_name: Mariam
 ---
 
