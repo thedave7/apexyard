@@ -56,3 +56,7 @@ apexyard.projects.yaml
 projects
 onboarding.yaml
 workspace
+
+# MCP config carries machine-specific absolute paths (ops-root +
+# portfolio-root); per-machine, never committed.
+.mcp.json

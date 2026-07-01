@@ -1,6 +1,6 @@
 # Role Triggers — When to Activate Which Role
 
-ApexYard ships **20 role definitions** in `roles/{department}/`. They are not all loaded into every session (context efficiency — 20 files × ~120 lines averages out to ~23k tokens, most of which are idle during any given task). Instead, a role is **activated** when a specific condition is met: you read the role file, adopt its identity, responsibilities, and constraints for the duration of the task, then hand off to the next role in the chain.
+ApexYard ships **22 role definitions** in `roles/{department}/`. They are not all loaded into every session (context efficiency — 22 files × ~120 lines averages out to ~25k tokens, most of which are idle during any given task). Instead, a role is **activated** when a specific condition is met: you read the role file, adopt its identity, responsibilities, and constraints for the duration of the task, then hand off to the next role in the chain.
 
 ## Activation Table
 
@@ -186,3 +186,24 @@ Naqid (The Contrarian) is a **utility agent**, not a department role — like Re
 ---
 
 *Part of [ApexYard](https://github.com/me2resh/apexyard) — multi-project SDLC framework for Claude Code · MIT.*
+
+<!-- BEGIN apexyard-premium:growth-pack -->
+### Growth/Marketing department (premium growth-pack)
+
+The Growth roles are request-shaped (no canonical file-path signature like
+`**/auth/**`), so **prompted activation** is the primary mechanical path —
+"act as the Head of Growth" / "act as the Growth Manager" fire via the
+`UserPromptSubmit` trigger. Self-discipline + the activation table below cover
+the rest.
+
+| Role | File | Activate when… |
+|------|------|----------------|
+| **Head of Growth** | `roles/growth/head-of-growth.md` | Go-to-market strategy · positioning · launch-plan decision · pricing-communication strategy · growth-funnel call · channel-mix decision |
+| **Growth Manager** | `roles/growth/growth-manager.md` | GTM-asset authoring (launch announcement / landing copy / lifecycle messaging) · launch execution · growth-experiment run · campaign work |
+
+| Signal | Activate |
+|--------|----------|
+| Positioning / launch-plan / pricing-communication strategy call | Head of Growth |
+| GTM-asset / launch-announcement / landing-copy / campaign request | Growth Manager |
+
+<!-- END apexyard-premium:growth-pack -->
